@@ -10824,7 +10824,7 @@ body {
 }
 
 .page-content {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 footer {
@@ -10873,6 +10873,12 @@ footer p {
   margin-left: -10px;
 }
 
+.navbar-store .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #F5D503;
+}
+
 .navbar-fixed-top.scrolled {
   background-color: #fff !important;
   -webkit-transition: background-color 100ms linear;
@@ -10888,8 +10894,8 @@ footer p {
   margin-top: 30px;
 }
 
-.page-home .store-new-product {
-  margin-top: 10px;
+.page-home .store-new-products {
+  margin-top: 30px;
 }
 
 .component-categories {
@@ -10958,6 +10964,13 @@ footer p {
 .component-products .products-price {
   font-weight: 500;
   font-size: 16px;
-  color: #ff7158;
+  color: #ba8b00;
+}
+
+.products-card{
+  border: 1px solid #F5D503; 
+  border-radius: 5px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -29,6 +29,11 @@
     color: #fefefe;
     margin-left: -10px;
   }
+
+  .form-control:focus{
+    box-shadow: none;
+    border: 1px solid #F5D503;
+  }
 }
 
 .navbar-fixed-top.scrolled {
