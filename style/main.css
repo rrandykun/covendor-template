@@ -10900,9 +10900,13 @@ footer p {
   width: 300px !important;
 }
 
-.sticky-top-nav {
-  top: 68px !important;
-  margin-bottom: 60px !important;
+@media only screen and (min-width: 995px) {
+  .sticky-top-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 68px !important;
+    margin-bottom: 60px !important;
+  }
 }
 
 .menu {
