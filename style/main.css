@@ -2733,7 +2733,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: #fff;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -10883,6 +10883,14 @@ footer p {
   background-color: #fff !important;
   -webkit-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
+}
+
+.login {
+  margin-bottom: 5px;
+}
+
+.dropdown-menu {
+  width: 300px !important;
 }
 
 .menu {

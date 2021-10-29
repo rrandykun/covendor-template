@@ -17,7 +17,7 @@
 <body>
   <header>
     <nav class="
-      navbar navbar-expand-lg navbar-store" data-aos="fade-down">
+      navbar navbar-expand-lg navbar-store" data-aos="fade-down" style="z-index: 3;">
       <div class="container">
         <a href="index.html" class="navbar-brand">
           <img src="images/logo-covendor.png" alt="Logo" width="200px" />
@@ -25,18 +25,28 @@
 
         <div>
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a href="login.html" class="btn btn-outline-primary nav-link px-4">Masuk</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-user-circle mr-1"></i>Login
+              </a>
+              
+              <div class="dropdown-menu p-3">
+                  <form class="form-horizontal" method="post" >
+                      <input class="form-control login" type="text" name="username2" placeholder="Username">
+                      <input class="form-control login" type="text" name="password2" placeholder="Password">
+                      <input class="btn btn-primary text-white" type="button" name="submit" value="Login">
+                  </form>
+              </div>
             </li>
             <li class="nav-item active">
-              <a href="register.html" class="btn btn-primary nav-link px-4">Daftar</a>
+              <a href="register.html" class="btn btn-primary nav-link px-4 text-white">Register</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F0F1FA;">
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F0F1FA; z-index: 2; ">
     <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,15 +58,15 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Kategori 1</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">Kategori 2</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
+              Kategori 3
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#">Action</a>
@@ -72,10 +82,10 @@
   <!-- Page Content -->
   <div class="page-content page-home">
 
-    <section class="store-carousel py-4">
+    <section class="store-carousel py-4" >
       <div class="container">
         <div class="row">
-          <div class="col-lg-12" data-aos="zoom-in">
+          <div class="col-lg-12" data-aos="zoom-in" style="z-index: 1;">
             <div id="storeCarousel" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li class="active" data-target="#storeCarousel" data-slide-to="0"></li>
@@ -115,38 +125,45 @@
         <div class="row shadow rounded">
           <div class="col-4 p-3" style="background-color: #F0F1FA;">
             <ul class="list-unstyled">
-              <li>Forklift/ Material Handling</li>
-              <ul>
-                <li>Mitsubishi</li>
-                <li>Toyota</li>
-                <li>TCM</li>
-                <li>Caterpillar</li>
-              </ul>
-              <li>Construction Machinery</li>
-              <ul>
-                <li>Komatsu</li>
-                <li>Caterpillar</li>
-              </ul>
-              <li>Industrial</li>
-              <ul>
-                <li>Bearing</li>
+              <li data-toggle="collapse" data-target="#test"> 
+                <span><a href="#" class="text-dark">+ Forklift/ Material Handling </a></span>
+                  <ul class="collapse" id="test">
+                    <li>Mitsubishi</li>
+                    <li>Toyota</li>
+                    <li>TCM</li>
+                    <li>Caterpillar</li>
+                  </ul>
+              </li>
+              <li data-toggle="collapse" data-target="#test2"> 
+                <span><a href="#" class="text-dark">+ Construction Machinery</a></span>
+                  <ul class="collapse" id="test2">
+                    <li>Komatsu</li>
+                    <li>Caterpillar</li>
+                  </ul>
+              </li>
+              <li data-toggle="collapse" data-target="#test3"> 
+                <span><a href="#" class="text-dark">+ Industrial</a></span>
+                  <ul class="collapse" id="test3">
+                    <li>Bearing</li>
                 <li>Belt</li>
                 <li>Filter</li>
                 <li>Seal</li>
-              </ul>
+                  </ul>
               </li>
-            </ul>
+          </ul>
+            
           </div>
           <div class="col-8 p-3" style="background-color: #FBFBFF;">
-            <a href="#" style="text-decoration: none;">Lihat Riwayat Transaksi</a>
-            <form style="pt-4">
+            <a href="#" style="text-decoration: none;">Transaction History</a>
+            <form class="pt-4">
               <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="exampleFormControlInput1">Part Number</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Part number, name">
               </div>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+              Filter
+              <div class="form-group row pl-3 mt-2">
+                <label for="exampleFormControlSelect1" class="col-2">Type</label>
+                <select class="ml-5 form-control col-3" id="exampleFormControlSelect1" style="width: 100px;">
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -154,9 +171,29 @@
                   <option>5</option>
                 </select>
               </div>
-              <div class="input-group">
-                <button id="search-button" type="button" class="btn btn-primary">
-                  Cari Barang <i class="fa fa-search"></i>
+              <div class="form-group row pl-3">
+                <label for="exampleFormControlSelect1" class="col-2">Brand</label>
+                <select class="ml-5 form-control col-3" id="exampleFormControlSelect1" style="width: 100px;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group row pl-3">
+                <label for="exampleFormControlSelect1" class="col-2">Location</label>
+                <select class="ml-5 form-control col-3" id="exampleFormControlSelect1" style="width: 100px;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="input-group row">
+                <button id="search-button" type="button" class="btn btn-primary text-white ml-auto">
+                  Search <i class="fa fa-search"></i>
                 </button>
               </div>
             </form>
@@ -208,10 +245,10 @@
       <div class="container">
         <div class="row">
           <div class="col-6" data-aos="fade-up">
-            <h5>Produk Promo</h5>
+            <h5>New arrivals </h5>
           </div>
           <div class="col-6 text-right" data-aos="fade-up">
-            <a href="#" style="text-decoration: none;">Lihat Semua</a>
+            <a href="#" style="text-decoration: none;">See More</a>
           </div>
         </div>
         <div class="row">
@@ -300,7 +337,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12" data-aos="fade-up">
-            <h5>Produk</h5>
+            <h5>Products</h5>
           </div>
         </div>
         <div class="row">
@@ -406,7 +443,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-2" data-aos="fade-up">
-            <a href="#" class="btn btn-outline-primary nav-link">Muat Lainnya</a>
+            <a href="#" class="btn btn-outline-primary nav-link">See More</a>
           </div>
         </div>
       </div>
@@ -425,34 +462,34 @@
               <h5>Co-Vendor</h5>
               <ul class="list-unstyled mt-4">
                 <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Tentang Co-vendor</a>
+                  <a href="#" class="text-secondary" style="text-decoration: none;">About Co-vendor</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Siaran Pers</a>
+                  <a href="#" class="text-secondary" style="text-decoration: none;">Press Release</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Karir</a>
+                  <a href="#" class="text-secondary" style="text-decoration: none;">Career</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">FAQ (Tanya Jawab)</a>
+                  <a href="#" class="text-secondary" style="text-decoration: none;">FAQ (Frequently Ask Question)</a>
                 </li>
               </ul>
             </div>
             <div class="col-12 col-lg-3 mb-4">
-              <h5>Bantuan dan Panduan
+              <h5>Guide and Help
               </h5>
               <ul class="list-unstyled mt-4">
                 <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Bantuan Covendor</a>
+                  <a href="#" class="text-secondary" style="text-decoration: none;">Covendor Care</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Cara Berbelanja</a>
+                  <a href="#" class="text-secondary" style="text-decoration: none;">How To</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Syarat dan Ketentuan</a>
+                  <a href="#" class="text-secondary" style="text-decoration: none;">Terms and Condition</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Kebijakan Privasi</a>
+                  <a href="#" class="text-secondary" style="text-decoration: none;">Privacy</a>
                 </li>
               </ul>
             </div>
@@ -468,7 +505,7 @@
                   support@covendor.com
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Kirim Pesan</a>
+                  <a href="#" class="text-secondary" style="text-decoration: none;">Send Message</a>
                 </li>
               </ul>
             </div>
@@ -479,7 +516,7 @@
     <div class="container-fluid" style="background-color: #2D3170;">
       <div class="row border-top justify-content-center align-items-center pt-4 pb-4">
         <div class="col-auto text-white-50">
-          © 2021 Hak Cipta Terpelihara PT Covendor.com.
+          © 2021 Copyrights PT Covendor.
         </div>
       </div>
     </div>
