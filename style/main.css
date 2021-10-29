@@ -10901,8 +10901,8 @@ footer p {
 }
 
 .sticky-top {
-  top: 68px;
-  margin-bottom: 60px;
+  top: 68px !important;
+  margin-bottom: 60px !important;
 }
 
 .menu {
