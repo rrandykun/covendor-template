@@ -1,574 +1,860 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <title>Co-Vendor</title>
 
-  <title>Co-Vendor</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Awesome CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
 
-  <!-- CSS -->
-  <link href="style/main.css" rel="stylesheet" />
-</head>
+  <body>
+    <!-- Navbar pertama -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-store fixed-top navbar-fixed-top"
+        data-aos="fade-down"
+        style="z-index: 3"
+      >
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="images/logo-covendor.png" alt="Logo" width="200px" />
+          </a>
 
-<body>
-  <!-- Navbar pertama -->
-  <header>
-    <nav class="
-      navbar navbar-expand-lg navbar-store fixed-top navbar-fixed-top" data-aos="fade-down" style="z-index: 3;">
+          <div>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-black-50"
+                  href="http://example.com"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-user-circle mr-1"></i>Login
+                </a>
+
+                <div class="dropdown-menu p-3">
+                  <form class="form-horizontal" method="post">
+                    <input
+                      class="form-control login"
+                      type="text"
+                      name="username2"
+                      placeholder="Username"
+                    />
+                    <input
+                      class="form-control login"
+                      type="text"
+                      name="password2"
+                      placeholder="Password"
+                    />
+                    <input
+                      class="btn btn-primary text-white"
+                      type="button"
+                      name="submit"
+                      value="Login"
+                    />
+                  </form>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a
+                  href="register.html"
+                  class="btn btn-primary nav-link px-4 text-white"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar pertama -->
+
+    <!-- Navbar kedua -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light sticky-top-nav shadow-sm"
+      style="background-color: #f0f1fa; z-index: 2"
+    >
       <div class="container">
-        <a href="index.html" class="navbar-brand">
-          <img src="images/logo-covendor.png" alt="Logo" width="200px" />
-        </a>
-
-        <div>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-black-50" href="http://example.com" id="navbarDropdownMenuLink"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-user-circle mr-1 "></i>Login
-              </a>
-
-              <div class="dropdown-menu p-3">
-                <form class="form-horizontal" method="post">
-                  <input class="form-control login" type="text" name="username2" placeholder="Username">
-                  <input class="form-control login" type="text" name="password2" placeholder="Password">
-                  <input class="btn btn-primary text-white" type="button" name="submit" value="Login">
-                </form>
-              </div>
-            </li>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
             <li class="nav-item active">
-              <a href="register.html" class="btn btn-primary nav-link px-4 text-white">Register</a>
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kategori 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kategori 2</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Kategori 3
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  </header>
-  <!-- Navbar pertama -->
+    <!-- Navbar kedua -->
 
-  <!-- Navbar kedua -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top-nav shadow-sm"
-    style="background-color: #F0F1FA; z-index: 2; ">
-    <div class="container ">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kategori 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kategori 2</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Kategori 3
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Navbar kedua -->
-
-
-  <div class="page-content page-home">
-    <!-- Space Iklan 1 -->
-    <section class="store-carousel py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12" data-aos="zoom-in" style="z-index: 1;">
-            <div id="storeCarousel" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li class="active" data-target="#storeCarousel" data-slide-to="0"></li>
-                <li data-target="#storeCarousel" data-slide-to="1"></li>
-                <li data-target="#storeCarousel" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="images/banner-covendor.jpg" alt="Banner" class="d-block w-100"
-                    style="border-radius: 15px; height: 218px;" />
-                </div>
-                <div class="carousel-item">
-                  <img src="images/banner-covendor.jpg" alt="Banner" class="d-block w-100"
-                    style="border-radius: 15px; height: 218px;" />
-                </div>
-                <div class="carousel-item">
-                  <img src="images/banner-covendor.jpg" alt="Banner" class="d-block w-100"
-                    style="border-radius: 15px; height: 218px;" />
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#storeCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#storeCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Space Iklan 1 -->
-
-    <!-- Pencarian -->
-    <section>
-      <div class="container">
-        <div class="row shadow rounded">
-          <div class="col-4 p-3" style="background-color: #F0F1FA;">
-            <ul class="list-unstyled">
-              <li data-toggle="collapse" data-target="#test">
-                <span><i class="fa fa-tools text-success mr-1"></i> <a href="#" class="text-dark">Forklift/ Material
-                    Handling </a></span>
-                <ul class="collapse" id="test">
-                  <li>Mitsubishi</li>
-                  <li>Toyota</li>
-                  <li>TCM</li>
-                  <li>Caterpillar</li>
-                </ul>
-              </li>
-              <li data-toggle="collapse" data-target="#test2">
-                <span><i class="fa fa-cogs text-warning mr-1"></i><a href="#" class="text-dark">Construction
-                    Machinery</a></span>
-                <ul class="collapse" id="test2">
-                  <li>Komatsu</li>
-                  <li>Caterpillar</li>
-                </ul>
-              </li>
-              <li data-toggle="collapse" data-target="#test3">
-                <span><i class="fa fa-industry text-info mr-1"></i> <a href="#" class="text-dark">Industrial</a></span>
-                <ul class="collapse" id="test3">
-                  <li>Bearing</li>
-                  <li>Belt</li>
-                  <li>Filter</li>
-                  <li>Seal</li>
-                </ul>
-              </li>
-            </ul>
-
-          </div>
-          <div class="col-8 p-3" style="background-color: #FBFBFF;">
-            <a href="#" style="text-decoration: none;">Transaction History</a>
-            <form class="pt-4">
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Part Number</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Part number, name">
-              </div>
-              Filter
-              <div class="form-group row pl-3 mt-2">
-                <label for="exampleFormControlSelect1" class="col-2">Type</label>
-                <select class="ml-5 form-control col-3" id="exampleFormControlSelect1" style="width: 100px;">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group row pl-3">
-                <label for="exampleFormControlSelect1" class="col-2">Brand</label>
-                <select class="ml-5 form-control col-3" id="exampleFormControlSelect1" style="width: 100px;">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group row pl-3">
-                <label for="exampleFormControlSelect1" class="col-2">Location</label>
-                <select class="ml-5 form-control col-3" id="exampleFormControlSelect1" style="width: 100px;">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="input-group row">
-                <button id="search-button" type="button" class="btn btn-primary text-white ml-auto">
-                  <i class="fa fa-search"></i> Search
-                </button>
-              </div>
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Pencarian -->
-
-    <!-- Space Iklan 2 -->
-    <section class="store-carousel py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12" data-aos="zoom-in">
-            <div id="storeCarousel2" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li class="active" data-target="#storeCarousel2" data-slide-to="0"></li>
-                <li data-target="#storeCarousel2" data-slide-to="1"></li>
-                <li data-target="#storeCarousel2" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="images/banner-covendor.jpg" alt="Banner" class="d-block w-100"
-                    style="border-radius: 15px; height: 218px;" />
-                </div>
-                <div class="carousel-item">
-                  <img src="images/banner-covendor.jpg" alt="Banner" class="d-block w-100"
-                    style="border-radius: 15px; height: 218px;" />
-                </div>
-                <div class="carousel-item">
-                  <img src="images/banner-covendor.jpg" alt="Banner" class="d-block w-100"
-                    style="border-radius: 15px; height: 218px;" />
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#storeCarousel2" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#storeCarousel2" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Space Iklan 2 -->
-
-    <!-- Produk Baru -->
-    <section class="store-new-products">
-      <div class="container">
-        <div class="row">
-          <div class="col-6" data-aos="fade-up">
-            <h5>New arrivals </h5>
-          </div>
-          <div class="col-6 text-right" data-aos="fade-up">
-            <a href="#" style="text-decoration: none;">See More</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="100">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/1.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">Spare part Forklift Engine
-              </div>
-              <div class="products-price">Rp 1.000.000
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="200">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/2.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">Sparepart Forklift & Material Handling
-              </div>
-              <div class="products-price">Rp 1.000.000
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="300">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/3.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">Sparepart Pompa Centrifugal
-              </div>
-              <div class="products-price">Rp 900.000</div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="400">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/4.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">OEM Timing Belt Red Rubber 25 AT10 PAZ 40-45SHA
-              </div>
-              <div class="products-price">Rp 3.915.600</div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="500">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/5.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">HYDRAULIC PARTS A10VS045
-              </div>
-              <div class="products-price">Rp 30.915</div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="600">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/6.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">Optibelt Belt HVAC SK4 3V500
-              </div>
-              <div class="products-price">Rp 90.915</div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Produk Baru -->
-
-    <div class="hl container">
-    </div>
-
-    <!-- Produk -->
-    <section class="store-new-products">
-      <div class="container">
-        <div class="row">
-          <div class="col-12" data-aos="fade-up">
-            <h5>Products</h5>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="100">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/1.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">Spare part Forklift Engine
-              </div>
-              <div class="products-price">Rp 1.000.000
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="200">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/2.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">Sparepart Forklift & Material Handling
-              </div>
-              <div class="products-price">Rp 1.000.000
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="300">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/3.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">Sparepart Pompa Centrifugal
-              </div>
-              <div class="products-price">Rp 900.000</div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="400">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/4.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">OEM Timing Belt Red Rubber 25 AT10 PAZ 40-45SHA
-              </div>
-              <div class="products-price">Rp 3.915.600</div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="500">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/5.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">HYDRAULIC PARTS A10VS045
-              </div>
-              <div class="products-price">Rp 30.915</div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="600">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/6.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">Optibelt Belt HVAC SK4 3V500
-              </div>
-              <div class="products-price">Rp 90.915</div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="700">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/7.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">OEM Drive Belt 75x2108
-              </div>
-              <div class="products-price">Rp 292.700</div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 products-card" data-aos="fade-up" data-aos-delay="800">
-            <a href="details.html" class="component-products d-block">
-              <div class="products-thumbnail">
-                <div class="products-image" style="
-                      background-image: url('images/products/8.jpg');
-                    "></div>
-              </div>
-              <div class="products-text">Ammerral Belt Cap Cute Ronchi 2 - 7 x 188 cm
-              </div>
-              <div class="products-price">
-                Rp 277.400</div>
-            </a>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-2" data-aos="fade-up">
-            <a href="#" class="btn btn-outline-primary nav-link">See More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Produk -->
-
-  </div>
-
-  <!-- Back to top button -->
-  <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">
-    <i class="fa fa-arrow-up"></i>
-  </button>
-  <!-- Back to top button -->
-
-  <!-- Footer -->
-  <footer style="background-color: #F0F1FA;">
-    <div class="container pt-5 pb-3">
-      <div class="row justify content-center" style="color: #2D3170;">
-        <div class="col-12">
+    <div class="page-content page-home">
+      <!-- Space Iklan 1 -->
+      <section class="store-carousel py-4">
+        <div class="container">
           <div class="row">
-            <div class="col-10 col-lg-3">
-              <img src="images/co_vendor_fix.png" alt="Logo" width="200px" class="mb-5">
+            <div class="col-lg-12" data-aos="zoom-in" style="z-index: 1">
+              <div
+                id="storeCarousel"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    class="active"
+                    data-target="#storeCarousel"
+                    data-slide-to="0"
+                  ></li>
+                  <li data-target="#storeCarousel" data-slide-to="1"></li>
+                  <li data-target="#storeCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/banner-covendor.jpg"
+                      alt="Banner"
+                      class="d-block w-100"
+                      style="border-radius: 15px; height: 218px"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/banner-covendor.jpg"
+                      alt="Banner"
+                      class="d-block w-100"
+                      style="border-radius: 15px; height: 218px"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/banner-covendor.jpg"
+                      alt="Banner"
+                      class="d-block w-100"
+                      style="border-radius: 15px; height: 218px"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#storeCarousel"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#storeCarousel"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
-            <div class="col-12 col-lg-3 col-sm-6 mb-4">
-              <h5>Co-Vendor</h5>
-              <ul class="list-unstyled mt-4">
-                <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">About Co-vendor</a>
+          </div>
+        </div>
+      </section>
+      <!-- Space Iklan 1 -->
+
+      <!-- Pencarian -->
+      <section class="px-4">
+        <div class="container">
+          <div class="row shadow rounded">
+            <div class="col-4 p-3" style="background-color: #f0f1fa">
+              <ul class="list-unstyled">
+                <li data-toggle="collapse" data-target="#test">
+                  <span
+                    ><i class="fa fa-tools text-success mr-1"></i>
+                    <a href="#" class="text-dark"
+                      >Forklift/ Material Handling
+                    </a></span
+                  >
+                  <ul class="collapse" id="test">
+                    <li>Mitsubishi</li>
+                    <li>Toyota</li>
+                    <li>TCM</li>
+                    <li>Caterpillar</li>
+                  </ul>
                 </li>
-                <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Press Release</a>
+                <li data-toggle="collapse" data-target="#test2">
+                  <span
+                    ><i class="fa fa-cogs text-warning mr-1"></i
+                    ><a href="#" class="text-dark"
+                      >Construction Machinery</a
+                    ></span
+                  >
+                  <ul class="collapse" id="test2">
+                    <li>Komatsu</li>
+                    <li>Caterpillar</li>
+                  </ul>
                 </li>
-                <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Career</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">FAQ (Frequently Ask Question)</a>
+                <li data-toggle="collapse" data-target="#test3">
+                  <span
+                    ><i class="fa fa-industry text-info mr-1"></i>
+                    <a href="#" class="text-dark">Industrial</a></span
+                  >
+                  <ul class="collapse" id="test3">
+                    <li>Bearing</li>
+                    <li>Belt</li>
+                    <li>Filter</li>
+                    <li>Seal</li>
+                  </ul>
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-lg-3 col-sm-6 mb-4">
-              <h5>Guide and Help
-              </h5>
-              <ul class="list-unstyled mt-4">
-                <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Covendor Care</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">How To</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Terms and Condition</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Privacy</a>
-                </li>
-              </ul>
+            <div class="col-8 p-3" style="background-color: #fbfbff">
+              <a href="#" style="text-decoration: none">Transaction History</a>
+              <form class="pt-4">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Part Number</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Part number, name"
+                  />
+                </div>
+                Filter
+                <div class="form-group row pl-3 mt-2">
+                  <label for="exampleFormControlSelect1" class="col-2"
+                    >Type</label
+                  >
+                  <select
+                    class="ml-5 form-control col-3"
+                    id="exampleFormControlSelect1"
+                    style="width: 100px"
+                  >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group row pl-3">
+                  <label for="exampleFormControlSelect1" class="col-2"
+                    >Brand</label
+                  >
+                  <select
+                    class="ml-5 form-control col-3"
+                    id="exampleFormControlSelect1"
+                    style="width: 100px"
+                  >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group row pl-3">
+                  <label for="exampleFormControlSelect1" class="col-2"
+                    >Location</label
+                  >
+                  <select
+                    class="ml-5 form-control col-3"
+                    id="exampleFormControlSelect1"
+                    style="width: 100px"
+                  >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="input-group row">
+                  <button
+                    id="search-button"
+                    type="button"
+                    class="btn btn-primary text-white ml-auto"
+                  >
+                    <i class="fa fa-search"></i> Search
+                  </button>
+                </div>
+              </form>
             </div>
-            <div class="col-12 col-lg-3 col-sm-6 mb-4">
-              <h5>Customer Care</h5>
-              <ul class="list-unstyled mt-4">
-                <li class="mb-2">
-                  <a href="https://wa.me/+6285231649227" rel="noopener noreferrer" target="_blank" title="WhatsApp"
-                    class="text-secondary" style="text-decoration: none;"><i class="fab fa-whatsapp"></i>&nbsp;+62
-                    852-3164-9227</a>
-                </li>
-                <li class="mb-2 text-secondary">
-                  support@covendor.com
-                </li>
-                <li class="mb-2">
-                  <a href="#" class="text-secondary" style="text-decoration: none;">Send Message</a>
-                </li>
-              </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Pencarian -->
+
+      <!-- Space Iklan 2 -->
+      <section class="store-carousel py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12" data-aos="zoom-in">
+              <div
+                id="storeCarousel2"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    class="active"
+                    data-target="#storeCarousel2"
+                    data-slide-to="0"
+                  ></li>
+                  <li data-target="#storeCarousel2" data-slide-to="1"></li>
+                  <li data-target="#storeCarousel2" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/banner-covendor.jpg"
+                      alt="Banner"
+                      class="d-block w-100"
+                      style="border-radius: 15px; height: 218px"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/banner-covendor.jpg"
+                      alt="Banner"
+                      class="d-block w-100"
+                      style="border-radius: 15px; height: 218px"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/banner-covendor.jpg"
+                      alt="Banner"
+                      class="d-block w-100"
+                      style="border-radius: 15px; height: 218px"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#storeCarousel2"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#storeCarousel2"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Space Iklan 2 -->
+
+      <!-- Produk Baru -->
+      <section class="store-new-products">
+        <div class="container">
+          <div class="row">
+            <div class="col-6" data-aos="fade-up">
+              <h5>New arrivals</h5>
+            </div>
+            <div class="col-6 text-right" data-aos="fade-up">
+              <a href="#" style="text-decoration: none">See More</a>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/1.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">Spare part Forklift Engine</div>
+                <div class="products-price">Rp 1.000.000</div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/2.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">
+                  Sparepart Forklift & Material Handling
+                </div>
+                <div class="products-price">Rp 1.000.000</div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/3.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">Sparepart Pompa Centrifugal</div>
+                <div class="products-price">Rp 900.000</div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/4.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">
+                  OEM Timing Belt Red Rubber 25 AT10 PAZ 40-45SHA
+                </div>
+                <div class="products-price">Rp 3.915.600</div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/5.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">HYDRAULIC PARTS A10VS045</div>
+                <div class="products-price">Rp 30.915</div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/6.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">Optibelt Belt HVAC SK4 3V500</div>
+                <div class="products-price">Rp 90.915</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Produk Baru -->
+
+      <div class="hl container"></div>
+
+      <!-- Produk -->
+      <section class="store-new-products">
+        <div class="container">
+          <div class="row">
+            <div class="col-12" data-aos="fade-up">
+              <h5>Products</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/1.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">Spare part Forklift Engine</div>
+                <div class="products-price">Rp 1.000.000</div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/2.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">
+                  Sparepart Forklift & Material Handling
+                </div>
+                <div class="products-price">Rp 1.000.000</div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/3.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">Sparepart Pompa Centrifugal</div>
+                <div class="products-price">Rp 900.000</div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/4.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">
+                  OEM Timing Belt Red Rubber 25 AT10 PAZ 40-45SHA
+                </div>
+                <div class="products-price">Rp 3.915.600</div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/5.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">HYDRAULIC PARTS A10VS045</div>
+                <div class="products-price">Rp 30.915</div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/6.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">Optibelt Belt HVAC SK4 3V500</div>
+                <div class="products-price">Rp 90.915</div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/7.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">OEM Drive Belt 75x2108</div>
+                <div class="products-price">Rp 292.700</div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 products-card"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              <a href="details.html" class="component-products d-block">
+                <div class="products-thumbnail">
+                  <div
+                    class="products-image"
+                    style="background-image: url('images/products/8.jpg')"
+                  ></div>
+                </div>
+                <div class="products-text">
+                  Ammerral Belt Cap Cute Ronchi 2 - 7 x 188 cm
+                </div>
+                <div class="products-price">Rp 277.400</div>
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-2" data-aos="fade-up">
+              <a href="#" class="btn btn-outline-primary nav-link">See More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Produk -->
+    </div>
+
+    <!-- Back to top button -->
+    <button
+      type="button"
+      class="btn btn-outline-primary btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fa fa-arrow-up"></i>
+    </button>
+    <!-- Back to top button -->
+
+    <!-- Footer -->
+    <footer style="background-color: #f0f1fa">
+      <div class="container pt-5 pb-3">
+        <div class="row justify content-center" style="color: #2d3170">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-10 col-lg-3">
+                <img
+                  src="images/co_vendor_fix.png"
+                  alt="Logo"
+                  width="200px"
+                  class="mb-5"
+                />
+              </div>
+              <div class="col-12 col-lg-3 col-sm-6 mb-4">
+                <h5>Co-Vendor</h5>
+                <ul class="list-unstyled mt-4">
+                  <li class="mb-2">
+                    <a
+                      href="#"
+                      class="text-secondary"
+                      style="text-decoration: none"
+                      >About Co-vendor</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="#"
+                      class="text-secondary"
+                      style="text-decoration: none"
+                      >Press Release</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="#"
+                      class="text-secondary"
+                      style="text-decoration: none"
+                      >Career</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="#"
+                      class="text-secondary"
+                      style="text-decoration: none"
+                      >FAQ (Frequently Ask Question)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3 col-sm-6 mb-4">
+                <h5>Guide and Help</h5>
+                <ul class="list-unstyled mt-4">
+                  <li class="mb-2">
+                    <a
+                      href="#"
+                      class="text-secondary"
+                      style="text-decoration: none"
+                      >Covendor Care</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="#"
+                      class="text-secondary"
+                      style="text-decoration: none"
+                      >How To</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="#"
+                      class="text-secondary"
+                      style="text-decoration: none"
+                      >Terms and Condition</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="#"
+                      class="text-secondary"
+                      style="text-decoration: none"
+                      >Privacy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3 col-sm-6 mb-4">
+                <h5>Customer Care</h5>
+                <ul class="list-unstyled mt-4">
+                  <li class="mb-2">
+                    <a
+                      href="https://wa.me/+6285231649227"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      title="WhatsApp"
+                      class="text-secondary"
+                      style="text-decoration: none"
+                      ><i class="fab fa-whatsapp"></i>&nbsp;+62 852-3164-9227</a
+                    >
+                  </li>
+                  <li class="mb-2 text-secondary">support@covendor.com</li>
+                  <li class="mb-2">
+                    <a
+                      href="#"
+                      class="text-secondary"
+                      style="text-decoration: none"
+                      >Send Message</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid" style="background-color: #2D3170;">
-      <div class="row border-top justify-content-center align-items-center pt-4 pb-4">
-        <div class="col-auto text-white-50">
-          © 2021 Copyrights PT Covendor.
+      <div class="container-fluid" style="background-color: #2d3170">
+        <div
+          class="
+            row
+            border-top
+            justify-content-center
+            align-items-center
+            pt-4
+            pb-4
+          "
+        >
+          <div class="col-auto text-white-50">
+            © 2021 Copyrights PT Covendor.
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- Footer -->
+    </footer>
+    <!-- Footer -->
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.slim.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-  <!-- Custom JS -->
-  <script src="script/navbar-scroll.js"></script>
-  <script src="script/btn-up.js"></script>
-</body>
-
+    <!-- Custom JS -->
+    <script src="script/navbar-scroll.js"></script>
+    <script src="script/btn-up.js"></script>
+  </body>
 </html>
