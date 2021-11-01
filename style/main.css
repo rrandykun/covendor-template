@@ -10853,7 +10853,7 @@ footer p {
 
 @media (max-width: 991.98px) {
   .navbar-store {
-    background-color: #fff !important;
+    background-color: #f6ff00 !important;
   }
 }
 
@@ -10887,7 +10887,7 @@ footer p {
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #fff !important;
+  background-color: #f6ff00 !important;
   -webkit-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
 }
@@ -10930,6 +10930,10 @@ footer p {
 
 .hl {
   border-bottom: 2px solid #F0F1FA;
+}
+
+.text-kategori-utama {
+  color: #2D3170;
 }
 
 .component-categories {

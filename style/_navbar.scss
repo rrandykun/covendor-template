@@ -2,7 +2,7 @@
   padding-top: 15px;
 
   @include media-breakpoint-down(md) {
-    background-color: #fff !important;
+    background-color: #f6ff00 !important;
   }
 
   .nav-item {
@@ -30,28 +30,29 @@
     margin-left: -10px;
   }
 
-  .form-control:focus{
+  .form-control:focus {
     box-shadow: none;
     border: 1px solid #F5D503;
   }
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #fff !important;
+  background-color: #f6ff00 !important;
   transition: background-color 100ms linear;
 }
 
 .login {
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
+
 .dropdown-menu {
   width: 300px !important;
 }
 
 @media only screen and (min-width: 995px) {
-  .sticky-top-nav{
+  .sticky-top-nav {
     position: sticky;
-    top: 68px !important; 
+    top: 68px !important;
     margin-bottom: 60px !important;
   }
 }

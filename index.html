@@ -13,8 +13,10 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <!-- Awesome CSS -->
-  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- CSS -->
   <link href="style/main.css" rel="stylesheet" />
 </head>
@@ -32,16 +34,17 @@
         <div>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-black-50" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-black-50" href="http://example.com" id="navbarDropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-user-circle mr-1 "></i>Login
               </a>
-              
+
               <div class="dropdown-menu p-3">
-                  <form class="form-horizontal" method="post" >
-                      <input class="form-control login" type="text" name="username2" placeholder="Username">
-                      <input class="form-control login" type="text" name="password2" placeholder="Password">
-                      <input class="btn btn-primary text-white" type="button" name="submit" value="Login">
-                  </form>
+                <form class="form-horizontal" method="post">
+                  <input class="form-control login" type="text" name="username2" placeholder="Username">
+                  <input class="form-control login" type="text" name="password2" placeholder="Password">
+                  <input class="btn btn-primary text-white" type="button" name="submit" value="Login">
+                </form>
               </div>
             </li>
             <li class="nav-item active">
@@ -55,7 +58,8 @@
   <!-- Navbar pertama -->
 
   <!-- Navbar kedua -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top-nav shadow-sm" style="background-color: #F0F1FA; z-index: 2; ">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top-nav shadow-sm"
+    style="background-color: #F0F1FA; z-index: 2; ">
     <div class="container ">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,10 +93,10 @@
   </nav>
   <!-- Navbar kedua -->
 
-  
+
   <div class="page-content page-home">
     <!-- Space Iklan 1 -->
-    <section class="store-carousel py-4" >
+    <section class="store-carousel py-4">
       <div class="container">
         <div class="row">
           <div class="col-lg-12" data-aos="zoom-in" style="z-index: 1;">
@@ -137,33 +141,35 @@
         <div class="row shadow rounded">
           <div class="col-4 p-3" style="background-color: #F0F1FA;">
             <ul class="list-unstyled">
-              <li data-toggle="collapse" data-target="#test"> 
-                <span><a href="#" class="text-dark">+ Forklift/ Material Handling </a></span>
-                  <ul class="collapse" id="test">
-                    <li>Mitsubishi</li>
-                    <li>Toyota</li>
-                    <li>TCM</li>
-                    <li>Caterpillar</li>
-                  </ul>
+              <li data-toggle="collapse" data-target="#test">
+                <span><i class="fa fa-tools text-success mr-1"></i> <a href="#" class="text-dark">Forklift/ Material
+                    Handling </a></span>
+                <ul class="collapse" id="test">
+                  <li>Mitsubishi</li>
+                  <li>Toyota</li>
+                  <li>TCM</li>
+                  <li>Caterpillar</li>
+                </ul>
               </li>
-              <li data-toggle="collapse" data-target="#test2"> 
-                <span><a href="#" class="text-dark">+ Construction Machinery</a></span>
-                  <ul class="collapse" id="test2">
-                    <li>Komatsu</li>
-                    <li>Caterpillar</li>
-                  </ul>
+              <li data-toggle="collapse" data-target="#test2">
+                <span><i class="fa fa-cogs text-warning mr-1"></i><a href="#" class="text-dark">Construction
+                    Machinery</a></span>
+                <ul class="collapse" id="test2">
+                  <li>Komatsu</li>
+                  <li>Caterpillar</li>
+                </ul>
               </li>
-              <li data-toggle="collapse" data-target="#test3"> 
-                <span><a href="#" class="text-dark">+ Industrial</a></span>
-                  <ul class="collapse" id="test3">
-                    <li>Bearing</li>
-                <li>Belt</li>
-                <li>Filter</li>
-                <li>Seal</li>
-                  </ul>
+              <li data-toggle="collapse" data-target="#test3">
+                <span><i class="fa fa-industry text-info mr-1"></i> <a href="#" class="text-dark">Industrial</a></span>
+                <ul class="collapse" id="test3">
+                  <li>Bearing</li>
+                  <li>Belt</li>
+                  <li>Filter</li>
+                  <li>Seal</li>
+                </ul>
               </li>
-          </ul>
-            
+            </ul>
+
           </div>
           <div class="col-8 p-3" style="background-color: #FBFBFF;">
             <a href="#" style="text-decoration: none;">Transaction History</a>
@@ -205,7 +211,7 @@
               </div>
               <div class="input-group row">
                 <button id="search-button" type="button" class="btn btn-primary text-white ml-auto">
-                  Search <i class="fa fa-search"></i>
+                  <i class="fa fa-search"></i> Search
                 </button>
               </div>
             </form>
@@ -471,15 +477,11 @@
   </div>
 
   <!-- Back to top button -->
-  <button
-  type="button"
-  class="btn btn-outline-primary btn-floating btn-lg"
-  id="btn-back-to-top"
-  >
-  <i class="fa fa-arrow-up"></i>
+  <button type="button" class="btn btn-outline-primary btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fa fa-arrow-up"></i>
   </button>
   <!-- Back to top button -->
-  
+
   <!-- Footer -->
   <footer style="background-color: #F0F1FA;">
     <div class="container pt-5 pb-3">
@@ -529,7 +531,7 @@
               <ul class="list-unstyled mt-4">
                 <li class="mb-2">
                   <a href="https://wa.me/+6285231649227" rel="noopener noreferrer" target="_blank" title="WhatsApp"
-                    class="text-secondary" style="text-decoration: none;"><i class="fa fa-whatsapp"></i>&nbsp;+62
+                    class="text-secondary" style="text-decoration: none;"><i class="fab fa-whatsapp"></i>&nbsp;+62
                     852-3164-9227</a>
                 </li>
                 <li class="mb-2 text-secondary">
